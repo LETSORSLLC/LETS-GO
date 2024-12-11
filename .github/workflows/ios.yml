@@ -27,7 +27,7 @@ jobs:
         pod install
 
     - name: Build with Xcode
-      run: xcodebuild -workspace YourApp.xcworkspace -scheme YourApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.2' build
+      run: xcodebuild -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.2' build
 
     - name: Run tests
-      run: xcodebuild test -workspace YourApp.xcworkspace -scheme YourApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.2'
+      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.2'
