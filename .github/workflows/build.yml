@@ -21,8 +21,22 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node_modules-
+
     - name: Install dependencies
       run: npm install
+
+    - name: Run tests
+      run: npm test
+
+    - name: Lint code
+      run: npm run lint
 
     - name: Build the app
       run: npm run build
