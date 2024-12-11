@@ -1,0 +1,15 @@
+github: [Letsgorsllc]
+patreon: your-patreon-username
+open_collective: your-open-collective-username
+ko_fi: your-ko-fi-username
+tidelift: your-tidelift-platform-name/package-name
+community_bridge: your-community-bridge-project-name
+liberapay: your-liberapay-username
+issuehunt: your-issuehunt-username
+lfx_crowdfunding: your-lfx-crowdfunding-project-name
+polar: your-polar-username
+buy_me_a_coffee: your-buy-me-a-coffee-username
+thanks_dev: your-thanks-dev-username
+custom:
+  - url: https://letsgors.com
+    label: Custom Funding
