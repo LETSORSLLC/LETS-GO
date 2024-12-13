@@ -26,7 +26,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.uberclone"
+        applicationId "com.letsgo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -48,7 +48,7 @@ android {
             keyPassword 'android'
         }
         release {
-            keyAlias 'LET\'S GO'
+            keyAlias 'LETS-GO'
             keyPassword '150805'
             storeFile file('/Users/letsgo/podamair/signedkeYAndroid')
             storePassword '150805'
