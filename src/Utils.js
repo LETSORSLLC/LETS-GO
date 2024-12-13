@@ -1,6 +1,6 @@
 import { Platform } from "react-native";
 // eslint-disable-next-line import/no-unresolved
-import { MAPQUEST_APIKEY } from "@env";
+import { LETS_GO_MAPQUEST_APIKEY } from "@env";
 import axios from "axios";
 import Constants from "expo-constants";
 import * as Font from "expo-font";
@@ -76,7 +76,7 @@ export const fetchNearbyPlaces = async (location) => {
     params: {
       maxMatches: 10,
       origin: `${lat},${lon}`,
-      key: MAPQUEST_APIKEY,
+      key: LETS_GO_MAPQUEST_APIKEY,
     },
     responseType: "json",
   });
@@ -100,7 +100,7 @@ export const fetchPlacesApi = async (search) => {
       params: {
         collection: "address,adminArea,airport,category,franchise,poi",
         feedback: true,
-        key: MAPQUEST_APIKEY,
+        key: LETS_GO_MAPQUEST_APIKEY,
         limit: 15,
         q: search,
       },
@@ -130,7 +130,7 @@ export const fetchDirectionalApi = async (origin, destination = {}) => {
         to: origin,
         from: destination,
         unit: "m",
-        key: MAPQUEST_APIKEY,
+        key: LETS_GO_MAPQUEST_APIKEY,
       },
       responseType: "json",
     });
@@ -155,7 +155,7 @@ export const fetchUserAddress = async (location) => {
     method: "GET",
     params: {
       location: `${lat},${lon}`,
-      key: MAPQUEST_APIKEY,
+      key: LETS_GO_MAPQUEST_APIKEY,
     },
     responseType: "json",
   });
