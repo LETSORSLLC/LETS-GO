@@ -21,6 +21,9 @@ jobs:
       with:
         java-version: 11
 
+    - name: Navigate to Android project directory
+      run: cd android
+
     - name: Build with Gradle
       run: ./gradlew build
 
