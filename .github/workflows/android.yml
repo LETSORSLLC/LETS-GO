@@ -21,11 +21,11 @@ jobs:
       with:
         java-version: 11
 
-    - name: Navigate to Android project directory
-      run: cd android
+    - name: Make gradlew executable
+      run: chmod +x android/gradlew
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: android/gradlew build
 
     - name: Run tests
-      run: ./gradlew test
+      run: android/gradlew test
