@@ -1,0 +1,11 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+        // Your project configuration objects here
+    };
+    rootObject = <your-root-object-id>;
+}
