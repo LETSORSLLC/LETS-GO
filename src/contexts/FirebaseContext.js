@@ -47,10 +47,10 @@ export function FirebaseProvider({ children }) {
       // url: "https://www.example.com/?email=" + currentUser.email,
       url: `https://${FIREBASE_AUTHDOMAIN}/?email=${currentUser.email}`,
       iOS: {
-        bundleId: "com.uberclone",
+        bundleId: "com.letsgo",
       },
       android: {
-        packageName: "com.uberclone",
+        packageName: "com.letsgo",
         installApp: true,
         minimumVersion: "12",
       },
