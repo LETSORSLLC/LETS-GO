@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "uberclone.app"
-               BlueprintName = "uberclone"
-               ReferencedContainer = "container:uberclone.xcodeproj">
+               BuildableName = "letsgo.app"
+               BlueprintName = "letsgo"
+               ReferencedContainer = "container:letsgo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ubercloneTests.xctest"
-               BlueprintName = "ubercloneTests"
-               ReferencedContainer = "container:uberclone.xcodeproj">
+               BuildableName = "letsgoTests.xctest"
+               BlueprintName = "letsgoTests"
+               ReferencedContainer = "container:letsgo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "uberclone.app"
-            BlueprintName = "uberclone"
-            ReferencedContainer = "container:uberclone.xcodeproj">
+            BuildableName = "letsgo.app"
+            BlueprintName = "letsgo"
+            ReferencedContainer = "container:letsgo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "uberclone.app"
-            BlueprintName = "uberclone"
-            ReferencedContainer = "container:uberclone.xcodeproj">
+            BuildableName = "letsgo.app"
+            BlueprintName = "letsgo"
+            ReferencedContainer = "container:letsgo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,4 +1,4 @@
-package com.uberclone;
+package com.letsgo;
 
 import android.os.Build;
 import android.os.Bundle;
