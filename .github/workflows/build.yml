@@ -28,3 +28,11 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
       working-directory: android
+
+    - name: Run unit tests
+      run: ./gradlew test
+      working-directory: android
+
+    - name: Run integration tests
+      run: ./gradlew connectedAndroidTest
+      working-directory: android
