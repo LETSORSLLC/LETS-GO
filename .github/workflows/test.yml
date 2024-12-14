@@ -32,3 +32,6 @@ jobs:
 
     - name: Run Prettier
       run: npm run prettier
+
+    - name: Run security checks
+      run: npm audit

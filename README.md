@@ -84,3 +84,22 @@ Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Security Checks
+To ensure the security of the codebase, we have implemented security checks in our workflows. These checks help identify and fix vulnerabilities in the code.
+
+### Tools Used
+- `npm audit`: This tool checks for known vulnerabilities in the dependencies.
+- `snyk`: This tool also checks for known vulnerabilities in the dependencies.
+
+## Dual-Stage Identity Verification
+We have implemented a dual-stage identity verification system to enhance safety by requiring multiple layers of verification for both drivers and passengers.
+
+## Real-Time Trip Monitoring
+To ensure high standards of service quality, we use real-time trip monitoring and conduct thorough vehicle inspections.
+
+## Transparent Pricing Model
+We adopt a transparent pricing model to offer fair and consistent pricing, avoiding surge pricing during peak hours or periods of high demand.
+
+## Inclusivity
+Our platform is designed to cater to a wide range of passengers, including elderly individuals and those needing medical assistance, to promote inclusivity.

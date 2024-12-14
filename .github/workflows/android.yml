@@ -45,3 +45,6 @@ jobs:
     - name: Run integration tests
       run: ./gradlew connectedAndroidTest
       working-directory: android
+
+    - name: Run security checks
+      run: npm audit

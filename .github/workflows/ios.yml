@@ -12,6 +12,10 @@ jobs:
   build:
     runs-on: macos-latest
 
+    strategy:
+      matrix:
+        ios-version: [14.5, 15.0, 15.5]
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -27,13 +31,22 @@ jobs:
         pod install
 
     - name: Build with Xcode
-      run: xcodebuild -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' build
+      run: xcodebuild -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=${{ matrix.ios-version }}' build
 
     - name: Run tests
-      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14'
+      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=${{ matrix.ios-version }}'
 
     - name: Run unit tests
-      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' -only-testing:UnitTests
+      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=${{ matrix.ios-version }}' -only-testing:UnitTests
 
     - name: Run integration tests
-      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' -only-testing:IntegrationTests
+      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=${{ matrix.ios-version }}' -only-testing:IntegrationTests
+
+    - name: Run ESLint
+      run: npm run lint
+
+    - name: Run Prettier
+      run: npm run prettier
+
+    - name: Run security checks
+      run: npm audit
