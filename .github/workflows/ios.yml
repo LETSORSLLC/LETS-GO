@@ -31,3 +31,9 @@ jobs:
 
     - name: Run tests
       run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14'
+
+    - name: Run unit tests
+      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' -only-testing:UnitTests
+
+    - name: Run integration tests
+      run: xcodebuild test -workspace LetsGo.xcworkspace -scheme LetsGo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14' -only-testing:IntegrationTests
