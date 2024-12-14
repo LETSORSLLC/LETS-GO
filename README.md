@@ -21,13 +21,85 @@ Inclusivity is another critical aspect of Let’s Go Rideshare's business model.
 In summary, Let’s Go Rideshare LLC offers a reimagined approach to ride sharing, solving key industry issues like safety, ride quality, and pricing fairness. The company uses innovative technology to provide a better experience for both drivers and passengers.
 
 ## Installation
-Provide steps to set up the project locally, including dependencies and configurations.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/LETSORSLLC/LETS-GO.git
+   cd LETS-GO
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Set up environment variables:
+   - Create a `.env` file in the root directory.
+   - Add the necessary environment variables as specified in `.example.env`.
+
+4. Configure the project:
+   - Follow the instructions in the `android` and `ios` directories to set up the respective platforms.
 
 ## Usage
-Instructions on how to use the project, run tests, and any commands specific to the project.
+1. Start the development server:
+   ```sh
+   npm start
+   ```
+
+2. Run the project on Android:
+   ```sh
+   npm run android
+   ```
+
+3. Run the project on iOS:
+   ```sh
+   npm run ios
+   ```
+
+4. Run tests:
+   ```sh
+   npm test
+   ```
+
+5. Lint the code:
+   ```sh
+   npm run lint
+   ```
+
+6. Format the code:
+   ```sh
+   npm run prettier
+   ```
 
 ## Contributing
-Guidelines for contributing to the project, including code of conduct and pull request process.
+We welcome contributions to the project! Please follow these guidelines:
+
+1. Fork the repository and create your branch from `main`.
+2. If you've added code that should be tested, add tests.
+3. Ensure the test suite passes.
+4. Make sure your code lints.
+5. Create a pull request.
+
+### Code of Conduct
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ## License
-Information about the project’s license.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Security Checks
+To ensure the security of the codebase, we have implemented security checks in our workflows. These checks help identify and fix vulnerabilities in the code.
+
+### Tools Used
+- `npm audit`: This tool checks for known vulnerabilities in the dependencies.
+- `snyk`: This tool also checks for known vulnerabilities in the dependencies.
+
+## Dual-Stage Identity Verification
+We have implemented a dual-stage identity verification system to enhance safety by requiring multiple layers of verification for both drivers and passengers.
+
+## Real-Time Trip Monitoring
+To ensure high standards of service quality, we use real-time trip monitoring and conduct thorough vehicle inspections.
+
+## Transparent Pricing Model
+We adopt a transparent pricing model to offer fair and consistent pricing, avoiding surge pricing during peak hours or periods of high demand.
+
+## Inclusivity
+Our platform is designed to cater to a wide range of passengers, including elderly individuals and those needing medical assistance, to promote inclusivity.

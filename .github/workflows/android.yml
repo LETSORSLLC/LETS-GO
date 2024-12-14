@@ -29,3 +29,22 @@ jobs:
 
     - name: Run tests
       run: android/gradlew test
+
+    - name: Run linting
+      run: ./gradlew lint
+      working-directory: android
+
+    - name: Run static code analysis
+      run: ./gradlew check
+      working-directory: android
+
+    - name: Run unit tests
+      run: ./gradlew test
+      working-directory: android
+
+    - name: Run integration tests
+      run: ./gradlew connectedAndroidTest
+      working-directory: android
+
+    - name: Run security checks
+      run: npm audit
